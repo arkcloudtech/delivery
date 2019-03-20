@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
-      check out the
+      check out the bla bla
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
     <h3>Installed CLI Plugins</h3>
@@ -38,6 +38,19 @@ export default {
   props: {
     msg: String,
   },
+    data: function(){
+        return {
+            name: 'Puffy Delivery Map',
+            activeTab: 0,
+            tabs: [
+                { id: 0, title: 'Driver Map', desc: 'show updated driver locations' },
+                { id: 1, title: 'Driver Listing', desc: 'list of drivers' },
+                { id: 2, title: 'Customer Map', desc: 'show updated customer locations' },
+                { id: 3, title: 'Customer Listing', desc: 'list of customers' },
+                { id: 4, title: 'Active Orders', desc: 'show orders in transit' }
+            ]
+        }
+    },
 };
 </script>
 
