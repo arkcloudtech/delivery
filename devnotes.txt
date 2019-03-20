@@ -1,0 +1,22 @@
+    
+    // cool mapping stuff
+    map.addEventListener('mousemove', function(ev) {
+        //debugger;
+        lat = ev.latlng.lat;
+        lng = ev.latlng.lng;
+        document.curLocation = {lat:lat, lng:lng};
+    });
+
+    map.addEventListener('click', function(ev) {
+        document.targetLocation = document.curLocation;
+        console.dir(document.targetLocation);
+    });
+
+
+
+    // more cool mapping samples (drawing polygons)
+    http://leaflet.github.io/Leaflet.draw/docs/examples/full.html
+
+    // more cool mapping samples (exporting zips)
+    https://www.freemaptools.com/find-zip-codes-inside-user-defined-area.htm
+    
